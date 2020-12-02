@@ -1,13 +1,13 @@
 import React from "react"
-import "./app.css"
 import Booklist from "../booklist/Booklist";
 
-function App () {
-    return (
+//komponenta kuriam is didziosios raides
+const Main = () => {
+    return(
         <div>
+            <p>As esu Main Page</p>
             <Booklist/>
         </div>
     )
 }
-
-export default App
+export default Main
