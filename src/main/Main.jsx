@@ -1,13 +1,24 @@
-import React from "react"
-import Booklist from "../booklist/Booklist";
+import React, {Component} from "react";
+import straipsniai from "../data/straipsniai";
+import Article from "../article/Article";
 
-//komponenta kuriam is didziosios raides
-const Main = () => {
-    return(
-        <div>
-            <p>As esu Main Page</p>
-            <Booklist/>
-        </div>
-    )
+class Main extends Component {
+    constructor() {
+        super ();
+    }
+    render() {
+        const dataArticles = straipsniai.map ( straipsnis =>
+            <Article data =
+                         {{key:straipsnis.id,
+                         title:straipsnis.name,
+                         description:straipsnis.description}}/>)
+        return (
+            <main>
+                <div className="row">
+                    {dataArticles}
+                </div>
+            </main>
+        )
+    }
 }
-export default Main
+export default Main;

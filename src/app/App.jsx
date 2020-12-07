@@ -1,11 +1,11 @@
 import React from "react"
 import "./app.css"
-import Booklist from "../booklist/Booklist";
+import Main from "../main/Main";
 
 function App () {
     return (
         <div>
-            <Booklist/>
+            <Main/>
         </div>
     )
 }
