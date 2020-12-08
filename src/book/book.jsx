@@ -1,5 +1,6 @@
 import React from "react";
 import "./book.css";
+import Discount from "../discount/Discount";
 
 
 function Book(){
@@ -9,6 +10,7 @@ function Book(){
             <Author/>
             <Title/>
             <Price/>
+            <Discount/>
         </div>
     )
 }
