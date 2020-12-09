@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./contacts.css"
 
 
 // function Contacts (props) {
@@ -24,8 +25,8 @@ export default class Contacts extends Component {
     }
     render() {
         return(
-            <div>
-                <h3>Vardas" {this.props.name}</h3>
+            <div className="contacts">
+                <h3>Vardas: {this.props.name}</h3>
                 <p>El.pastas: {this.props.email}</p>
                 <p>Amzius: {this.state.age}</p>
                 <button onClick={this.makeOlder.bind(this)} className='btn btn-danger'>Please click for make older</button>

@@ -3,6 +3,7 @@ import straipsniai from "../data/straipsniai";
 import Article from "../article/Article";
 import Contacts from "../Contacts/Contacts";
 import Booklist from "../booklist/Booklist";
+import Hooks from "../hooks/Hooks";
 
 class Main extends Component {
     constructor() {
@@ -16,11 +17,12 @@ class Main extends Component {
                          description:straipsnis.description}}/>)
         return (
             <main>
+                <Hooks/>
                 <div className="row justify-content-center">
                     {dataArticles}
                 </div>
                 <Booklist/>
-                <Contacts name="Vaida" email = "vaida@gmail.com"
+                <Contacts name= "Vaida" email = "vaida@gmail.com"
                 initialAge = {21}/>
             </main>
         )
